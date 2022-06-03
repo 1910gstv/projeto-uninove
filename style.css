@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Kanit:wght@300&family=Kulim+Park:wght@600&family=Lalezar&family=M+PLUS+Code+Latin:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,900;1,900&family=Roboto:wght@100;900&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    /*margin-left: 18px;
+    margin-right: 18px;
+    padding-left: 18px;
+    padding-right: 18px;*/
+    background-color: #171717;
+}
+
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px;
+    padding: 12px;
+}
+
+#texto-cab, nav{
+    display: flex;
+    gap: 36px;
+}
+#texto-cab{
+    color: white;
+    font-family: 'lalezar';
+}
+
+.texto-cab {
+    color: #DA0037;
+    font-family: 'kanit';
+    letter-spacing: 1px;
+}
+
+#pesquisa{
+    border: 0.2px solid ;
+    border-radius: 15px;
+    background-color: #444444;
+    width: 230px;
+    height: 24px;
+}
+
+#txtpesquisa {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 12px;
+    border: none;
+    height: 24px;
+    width: 200px;
+}
+
+#imgpesquisa {
+    border: none;
+    background-color: transparent;
+}
+
+#formbusca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#img-inicial img{
+    border: 0.2px solid #DA0037;
+    border-radius: 24px;
+    box-shadow: 2px 2px 30px #DA0037;
+}
+
+
+#conteudo-inicial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -36px;
+    padding-left: 42px;
+    padding-right: 42px;
+    margin-left: 18px;
+    margin-right: 18px;
+    height: 600px;
+}
+#subtitulo-texto-inicial{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 700px;
+}
+#subtitulo-inicial{
+    color: #DA0037;
+    font-family: 'kanit';
+    font-size: 62px;
+    line-height: 90px;
+}
+#texto-inicial{
+    color: white;
+    font-family: 'Kulim park';
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+
+#cadastrar{
+    position: center;
+    width: 150px;
+    padding: 8px;
+    background-color: transparent;
+    border: 0.5px solid #DA0037;
+    border-radius: 30px;
+    padding: 12px;
+    
+}
+
+a#cadastre-se{
+    color: #DA0037;
+    font-size: 24px;
+    font-family: 'roboto';
+    font-weight: 400;
+    text-align: center;
+}
+
+#conteudo-secundario{
+    background-color: #444444;
+    height: 400px;
+    margin-top: 24px;
+}
+#texto-secundario{
+    padding-top: 18px;
+    text-align: center;
+    color: white;
+    font-family: 'kulim park';
+}
+#passos{
+    margin-top: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#passo1 #passo2 #passo3 #passo4 #passo5{
+    width: 200px;
+}
+
+#conteudo-terciario{
+    height: 300px;
+}
