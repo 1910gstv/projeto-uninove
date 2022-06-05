@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@500&family=Kanit:wght@300&family=Kulim+Park:wght@600&family=Lalezar&family=M+PLUS+Code+Latin:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,900;1,900&family=Roboto:wght@100;900&family=Ubuntu&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    background-color: #171717;
+    
+}
+
+#cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px;
+    padding: -4px;
+}
+
+#texto-cab, nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+}
+#texto-cab{
+    color: white;
+    font-family: 'lalezar';
+}
+
+.texto-cab {
+    color: #DA0037;
+    font-family: 'kanit';
+    letter-spacing: 1px;
+
+}
+
+#texto-cab img{
+    width: 40px;
+    color: #DA0037;
+}
+
+.texto-cab:focus, .texto-cab:hover {
+    border-bottom: 0.2px solid #DA0037;
+    
+}
+
+#pesquisa{
+    border: 0.2px solid ;
+    border-radius: 15px;
+    background-color: #444444;
+    width: 230px;
+    height: 24px;
+}
+
+#txtpesquisa {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 12px;
+    border: none;
+    height: 24px;
+    width: 200px;
+}
+
+#imgpesquisa {
+    border: none;
+    background-color: transparent;
+}
+
+#formbusca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Primeira div */
+
+#conteudo-inicial{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    width: 1200px;
+    gap: 32px;
+
+    
+}
+#subtitulo-texto-inicial{
+    text-align: center;
+    width: 500px;
+    color: white;
+    text-align: left;
+}
+
+#img-inicial img{
+    width: 550px;
+}
+
+#subtitulo-inicial{
+    font-family: 'Roboto';
+}
+
+#texto-inicial{
+    font-family: 'calibri';
+}
+
+/* Segundo conteudo */
+
+#conteudo-dois{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    width: 1200px;
+    gap: 32px;
+
+    
+}
+#container-conteudo-dois{
+    text-align: center;
+    width: 800px;
+    color: white;
+    text-align: left;
+    font-family: 'calibri';
+}
+
+#img-inicial img{
+    width: 550px;
+}
+
+#subtitulo-inicial{
+    font-family: 'Roboto';
+}
