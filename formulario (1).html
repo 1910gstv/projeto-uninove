@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: linear-gradient(to right,#fbb2b0,rgb(5, 5, 8),#fbb2b0);
+    }
+    .box{
+        color: white;
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: #171717;
+        padding: 10px;
+        border-radius: 20px;
+        width: 30%;
+}
+fieldset{
+border: 3px solid rgb(255, 75, 30);
+}
+legend{
+    border: 2px solid rgb(255, 75, 30);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 75, 30);
+    border-radius: 8px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: 5s;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput
+{
+    top: -20px;
+    font-size: 12px;
+    color:rgb(55, 236, 10);
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+border-radius: 10px;
+outline: none;
+font-size: 15px;
+}
+#submit{
+    background-image: linear-gradient(to right, rgb(233, 143, 143),rgb(5, 5, 8),rgb(233, 143, 143));
+    width: 100%;   
+    border: none;
+    padding: 15px;
+    color: rgb(255, 75, 30);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(102, 15, 76),rgb(5, 5, 8),rgb(102, 15, 76));
+}
+
+#home{
+    background-image:linear-gradient(to right,rgb(209, 64, 64),rgb(14, 12, 13),rgb(209, 64, 64));
+    width: 18px;   
+    border: none;
+    padding: 18px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <header>
+            <div id="cabecalho">
+                <div id="texto-cab"><img src="img/logo 3.png">LIV SHOP</div>
+                <div id="menunav">
+                    <nav>
+                        <a class="texto-cab" href="index.html">Home</a>
+                        <a class="texto-cab" href="sobrealiv.html">Quem somos</a>
+                        <a class="texto-cab" href="index_planos.html">Planos</a>
+                        <a class="texto-cab" href="contatos.html">Contatos</a>
+                    </nav>
+                </div>
+                <div id="pesquisa">
+                    <form action=" " method="post" id="formbusca"> 
+                        <input type="search" id="txtpesquisa" name="q" placeholder="Faça uma pesquisa">
+                        <button type="submit" id="imgpesquisa"><img src="img/lupa.png" width="30px"></button>
+                    </form>
+                </div>
+            </div>
+
+    <div class="box" width="50" height="50" top="50">
+        <form action="">
+            <fieldset>
+                <legend><strong>Formulário de clientes</strong></legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="name" id="name" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <p>Sexo</p>
+                <input type="radio" id="feminino" nome="genero" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" nome="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" nome="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+                <div class="inputBox">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input type="date" name="data_nascimento" id="data_nascimento"  required>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div> 
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
